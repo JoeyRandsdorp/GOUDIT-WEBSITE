@@ -1,0 +1,554 @@
+
+
+/*AFKORTINGEN:
+ MB = menubar
+ HS= herosection
+ */
+/* body {
+    border: 1vh solid black;
+} */
+
+ *{                                                                                           /*start menubar coding*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+.Menubar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    max-height: 10vh;
+}
+
+.logo{
+    padding: 2.5% 7%;
+    background-color: white;
+    border: 10px solid white;
+    border-radius: 60px;
+
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+    cursor: pointer;
+    margin: .5rem;
+    max-width: 10vw;
+    max-height: 15vh
+
+}
+
+.nav-links{
+    height: 10vh;
+    margin-left: 26vw;
+    width: 80vw;
+}
+
+.nav-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    height: 10vh;
+}
+
+.nav-links ul li{
+    list-style: none;
+    padding: 2vh 1vw;
+}
+
+.nav-links ul li:not(.liLogin){
+  padding-top: 3.2vh;
+  justify-self: space-around; 
+}
+
+.liLogin{
+    margin-left: 5vw;
+
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: #edf0f1;
+    display: block;
+    transition: all 0.3s ease 0s;
+    border-radius: 50px;
+    padding: .5em 1em;
+}
+
+.twoWords {
+    padding: .5em 2em;
+    white-space: nowrap
+}
+
+.nav-links li:not(.liLogin) a:hover{
+    background-color: rgb(254, 154, 34);
+}
+
+.liList{
+    margin-left: 50vw;
+}
+
+.LoginButton{
+    padding: 9px 25px;
+
+    color: white;
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 50px;
+    
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.LoginButton:hover{
+    background-color: rgb(254, 154, 34);
+}
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 900px){
+    .toggle-button{
+        display: flex;
+    }
+   .nav-links{
+    display: none;
+    width: 100%;
+   }
+    .Menubar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .Menubar ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-links li{
+        text-align: center;
+    }
+    .nav-links li a{
+        padding: .5rem 1rem;
+    }
+    .nav-links.active{
+        display: flex;
+    }
+}
+
+@media (max-width: 1700px){
+    .liList{
+        margin-left:0;
+    }
+    .nav-links{
+        margin-left: 0;
+    }
+    
+}
+
+@media (max-width: 1200px){
+    .nav-links li a{
+        padding: .5em .5em; 
+    }
+
+    .LoginButton{
+        padding: 9px 15px;
+    }
+    .liLogin{
+        margin-left: 0;
+    }
+    .logo{
+        margin: .5rem 0 .5rem .2rem;
+    }
+    .Menubar{
+        height: 7vh;
+    }
+}
+
+
+
+    
+    /*End menubar Coding*/
+  
+                                                                                                    /*Start Herosection coding*/
+.Herosection{
+    overflow: hidden;
+    max-height: 80vh;
+}
+.Herosection figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+.Herosection figure img{
+    width: 20%;
+    float: left;
+}
+@keyframes slider{
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left:-200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+                                                                                                   /*End Herosection coding*/
+                                                                                                   /*Start homepage coding*/
+   article{                                                                                               
+    text-align: center;
+    padding: 2em;
+    display: flex;
+}
+
+.EmptyLeft, .EmptyRight{                
+    flex: 1;            
+}
+
+.homepageArticle{
+    height: 50vh;
+}
+.Article{
+    flex: 3 ;
+    font-size: 130%;
+    align-content: center;
+}
+.Article a, .Article p{
+ color: black;
+}
+.Hoofdpaginatekst{
+    font-weight: bold;
+    font-size: 150%;
+    color:  rgb(254, 154, 34);
+}
+.Hoofdpaginatekst2{
+    font-weight: bold;
+}
+                                                                                                     
+.Products{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Products div{
+    padding: 2%;
+    Background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+.Products  img{
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+   margin: 30px;
+    border: 5px solid black;
+}
+
+.upperProductscontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.leftTitleBox{
+    flex: 1;
+}
+.midTitleBox{
+    flex: 2;
+}
+.midTitleBox p{
+    font-weight: bold;
+    font-size: 150%;
+    white-space: nowrap;
+}
+.rightTitleBox{
+    flex: 1;
+}
+
+.lowerProductscontainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0% 5%;
+}
+
+@media(max-width: 1000px){
+    .Article p, .Article a{
+        font-size: smaller;
+    }
+}
+@media(max-width: 750px){
+    .Article p, .Article a{
+        font-size: small;  
+    }
+    .midTitleBox p{
+        font-size: smaller;
+    }
+}
+
+                                                                                                    /*End homepage coding*/
+                                                                                                      /*start webshop coding*/
+
+ main{
+    border: 20px solid black;
+ }                                                                                                  
+.webshop{
+    
+    width: 80%;
+
+    margin: auto;
+}               
+.rij1, .rij2{
+    display: flex;
+    align-items: center;   
+    justify-content: space-between;
+}                                                                                    
+.webshop div{
+    border: 1px solid black; 
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+}
+.openfield{
+    height: 200px;
+}
+
+.webshop img{
+    width: 100%;
+}
+.webshop button{
+    background-color: #8a8a8c;
+    color: #0f1110;
+    font-weight: bold;
+    float: right;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 20px 10px 0px 0px;
+    border: 1px solid black;;
+}
+.webshop button:hover{
+    color:white;
+    cursor: pointer;
+    background-color: rgb(254, 154, 34);
+}
+
+
+                                                                                                   /*end webshop coding*/
+                                                                                                    /*start bedrijfspagina coding*/
+
+
+
+
+                                                                                                    /*end bedrijfspagina coding*/
+                                                                                                    /*start hulppagina coding*/
+
+
+
+                                                                                                    /*end hulppagina coding*/
+                                                                                                    /*start contactpagina coding*/
+
+
+                                                                                                    /*end contactpagina coding*/
+                                                                                                    
+                                                                                                     /*start Inlogform en registerForm coding*/
+main{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+   
+    width: 100%;
+    height: 70vh;
+
+}
+
+ .loginForm, .registerForm{
+    background-color: yellow;
+    
+    width: 25%;
+    height: 55vh;
+
+    margin: auto;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+ }
+
+ .loginBox, .registerBox{
+
+    height: 400px;
+    width: 400px;
+    padding: 30px;
+    margin: 40px 40px 20px 40px;
+ }
+ .loginBox p, .registerBox p{
+    text-align: center; 
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+input{
+    display: block;
+    border: 2px solid black;
+    width: 75%;
+    padding: 10px;
+    margin: 10px 10px 30px 10px;
+}
+
+label{
+    color: black;
+    font-size: 18px;
+}
+.loginSubmit{
+    background-color: white;
+    color: black;
+    float: right;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 20px 10px 0px 0px;
+    border: none;
+}
+
+.registerSubmit{
+    background-color: white;
+    color: black;
+    float: right;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 0px 10px 0px 0px;
+    border: none;
+}
+
+.loginSubmit:hover, .registerSubmit:hover{
+ background-color: red;
+ color: white;  
+}
+
+.goRegister, .goLogin{
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+.registerGo, .loginGo{
+    Color: black;
+    Font-size: 20px;
+    text-align: center;
+}
+
+.registerGo:hover, .loginGo:hover{
+    color: blue;
+}
+
+                                                                                                    /*end Inlogform en registerForm coding*/                                                                                                
+                                                                                                    /*start Footer coding*/
+ Footer{
+    display: flex; 
+        background-color: black;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 5vh;
+    cursor: pointer;
+    min-width: 5vh;
+ }                            
+
+.Contact{
+text-align: center;
+width: 60%;
+
+background-color: black;
+color: white;
+}  
+
+.Contact p:hover, .Official p:hover{
+Color: #55a9ca
+}
+
+.Contact p{
+    padding: 13px;
+}
+
+.Official{
+ width: 40%;
+ display: flex;
+ color: white;
+
+}
+
+.Official p{
+    padding: 13px 15px;
+}
+
+.Official img{
+    margin: 8px 20px;
+
+    width: 32px;
+    height: 32px;
+  
+}
+
+@media(max-width: 1000px){
+    .Contact{
+        width: 40%; 
+    }
+}
+@media(max-height: 1000px){
+    .Footer{
+        background-color: blue;
+    }
+   .Official p, .Contact p{
+    white-space: nowrap;
+    font-size: smaller;
+   }
+}
+                                                                                            /* End Footer coding */

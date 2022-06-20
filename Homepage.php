@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homepage</title>
+        <link rel="stylesheet" href="mainStyle.css">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>                                                                       <!--start menubar code-->
+            <nav class="Menubar">    
+                <div class="brand-img">
+                    <a href="Homepage.php"><img class="logo" src="images/logo.png"></a>
+                </div>
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <div  class="nav-links">    
+                        <ul>
+                            <li><a href="Homepage.php" class="Homer">Home</a> </li>
+                            <li><a href="Webshop.php">Domeinen</a></li>                              <!--Link naar Placeholder webshop -->
+                            <li><a href="Webshop.php">Services</a></li>                             <!--Link naar Placeholder webshop -->
+                            <li><a href="Webshop.php">Websites</a></li>                              <!--Link naar Placeholder webshop -->  
+                            <li class="twoWords"> <a href="Bedrijfspagina.html">Over ons</a></li>
+                            <li class="twoWords"> <a href="Hulppagina.php">Hulp nodig?</a></li>
+                            <li><a href="Contactpagina.php">Contact</a> </li> 
+                            <li class="liLogin"><a href="Loginpagina.php" class="Login"><button class="LoginButton">Inloggen</button></a></li> 
+                        </ul>
+                        
+                </div>
+                      
+        
+             <nav>
+            
+        </header>                                                                       
+                                                                                        <!-- start herosection code -->
+        <div class="Herosection">
+            <figure>
+                <img src="images/hero5.png">
+                <img src="images/hero2.png">
+                <img src="images/hero1.png">
+                <img src="images/hero4.png">
+                <img src="images/hero5.png">
+            </figure>
+        </div>
+
+        <section class= "Products">                         <!--start Products code-->
+              <div class="upperProductscontainer">
+                  <div class="leftTitleBox">
+
+                  </div>
+                  <div class="midTitleBox">
+                      <p>Onze meest populaire producten:</p>
+                  </div>
+                  <div class="rightTitleBox">
+
+                  </div>
+              </div>
+              <div class="lowerProductscontainer">
+                  <div class="LeftProduct">
+                      <img class="logo" src="https://via.placeholder.com/150x75">
+                  </div>
+
+                  <div class="MiddleProduct">
+                      <img class="logo" src="https://via.placeholder.com/150x75">
+                  </div>
+                  <div class="RightProduct">
+                      <img class="logo" src="https://via.placeholder.com/150x75">
+                  </div>
+              </div>
+        </section>
+        <article class="homepageArticle">                                       <!--start article code-->
+            <div class="EmptyLeft"></div>
+                <div class="Article">
+                    <p> Welkom op de website van <span class="Hoofdpaginatekst">GOUD-IT</span></p>
+                    <br>
+                    <p>Wij zijn u graag van dienst met alle IT diensten die u nodig heeft.</p>
+                    <p>Wij specialiseren ons het meest in <span class="Hoofdpaginatekst2">Webdevelopment</span>,</p>
+                    <p><span class="Hoofdpaginatekst2">Webdomeinen</span> installeren en <span class="Hoofdpaginatekst2">algemene IT service</span>.</p>
+                    <p>In onze webshop kunt u alle informatie vinden over deze services en bestellen.</p>
+                    <p>Heeft u een klus die afwijkt? Contacteer ons dan via onze <span class="Hoofdpaginatekst2"><a href="Contactpagina.php">Contactpagina</a></span>.</p>
+                    <p>Heeft u een andere vraag?</p>
+                    <p> Dan verwijzen wij u graag door naar onze <span class="Hoofdpaginatekst2"><a href="Hulppagina.php">Hulppagina</a></span>.</p>
+                </div>
+            <div class="EmptyRight"></div>
+        </article>
+                                                        <!-- start Footer code -->
+        <footer>
+            <div class="Contact">
+                    <p>Contactgegevens</p>
+            </div>
+            <div class= "Official"> 
+                <p>Terms of Use</p>
+                <p>Privacy Policy</p>
+                <img src="https://via.placeholder.com/150x75" alt="Linkedin Placeholder">
+                <img src="https://via.placeholder.com/150x75" alt="Facebook Placeholder">
+            </div>
+        </footer>
+      </body>
+</html>
