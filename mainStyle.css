@@ -14,7 +14,9 @@
     padding: 0;
 
 }
-
+body{
+    font-family: 'Charis SIL', serif;
+}
 .Menubar{
     display: flex;
     justify-content: space-between;
